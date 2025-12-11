@@ -1,0 +1,125 @@
+Stat Rules:
+  BASED ON SCALED SCORE IN PSYCHOMETRIC CONVERSION
+###
+'strength':
+
+  'brawn': 
+    - Raw Might
+    - Muscle Mass
+    - Explosiveness
+    - Lifting Capacity
+  'stamina':
+    - Muscular Endurance
+    - Grip Strength
+    - Structural Stability
+    - Gross Motor Control
+###
+'agility':
+    
+  'dodge':
+    - Reflexes
+    - Hit Avoidance
+    - Stealth
+  'mobility':
+    - Balance
+    - Speed
+    - Flexibility
+    - Acrobatics
+  'precision':
+    - Fine Motor Control
+    - Aim
+###
+'vitality':
+
+  'resilience':
+    - Pain Tolerance
+    - Durability
+    - Wound Threshold
+  'vigor':
+    - Recovery Rate
+    - Homeostatic Efficiency
+    - Resistance
+###
+'intelligence':
+
+  'memory':
+    - Information Retention
+    - Linguistic Ability
+  'logic':
+    - Pattern Recognition
+    - Spatial Reasoning
+    - Strategic Prowess
+  'fluency':
+    - Processing Speed
+    - Numeracy
+    - Tactical Prowess
+###
+'sagacity':
+
+  'perception':
+    - Environmental Awareness
+    - Sensory Sensitivity
+  'intuition':
+    - Instincts
+    - Socio-Emotional Insight
+  'composure':
+    - Mindfulness
+    - Emotional Stability
+###
+'empathy':
+
+  'charm':
+  'intimidation':
+  'seduction':
+  'deception':
+
+#####
+
+Personality Traits:
+
+#####
+
+'openness':
+
+  - 'imagination':
+  - 'aesthetics':
+  - 'emotionality':
+  - 'adventurousness':
+  - 'curiosity':
+  - 'progressivism':
+###
+conscientiousness':
+
+  - 'self_efficacy':
+  - 'orderliness':
+  - 'dutifulness':
+  - 'achievement_striving':
+  - 'self_discipline':
+  - 'cautiousness':
+###    
+'extraversion':
+
+  - 'warmth':
+  - 'gregariousness':
+  - 'assertiveness':
+  - 'liveliness':
+  - 'excitement_seeking':
+  - 'cheerfulness':
+###
+'agreeableness':
+
+  - 'trust':
+  - 'morality':
+  - 'altruism':
+  - 'cooperation':
+  - 'modesty':
+  - 'sympathy':
+###
+'neuroticism':
+
+- 'anxiety':
+- 'anger':
+- 'depression':
+- 'self_consciousness':
+- 'impulsiveness':
+- 'fear':

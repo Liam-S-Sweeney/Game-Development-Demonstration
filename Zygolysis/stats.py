@@ -1,0 +1,441 @@
+BASELINE = {
+    'Strength':{
+        'base':10,
+        'modifier':0,
+        'substats':{
+            'Brawn':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Raw Might':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Muscle Mass':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Explosiveness':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Lifting Capacity':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+            'Stamina':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Muscular Endurance':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Grip Strength':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Structural Stability':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Gross Control':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+        },
+    },
+
+
+    'Agility':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Dodge':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Raw Might':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Muscle Mass:':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Explosiveness':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Lifting Capacity':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+            'Mobility':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Balance':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Speed':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Flexibility':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Acrobatics':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+            'Precision':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Fine Motor Control':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Aim':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },     
+        },  
+    },
+
+    'Vitality':{
+        'base':5,
+        'modifier':0,  
+        'substats':{      
+            'Resilience':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Pain Tolerance':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Durability':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Wound Threshold':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+            'Vigor':{
+                'base':5,
+                'modifier':0,
+                'substats':{
+                    'Recovery Rate':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Homeostatic Efficiency':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                    'Resistance':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                },
+            },
+        },
+    },
+
+    'Intelligence':{
+        'base':5,
+        'modifier':0,  
+        'substats':{      
+            'Memory':{
+                'Information Retention':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Linguistic Ability':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            },
+            'Logic':{
+                'Pattern Recognition':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Spatial Reasoning':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Strategic Prowess':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            },
+            'Fluency':{
+                'Processing Speed':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Numeracy':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Tactical Prowess':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            }, 
+        }      
+    },
+
+    'Sagacity':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Perception':{
+                'Environmental Awareness':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Sensory Sensitivity':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            },
+            'Intuition':{
+                'Instincts':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Socio-Emotional Insight':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            },
+            'Composure':{
+                'Mindfulness':{
+                        'base':5,
+                        'modifier':0,
+                    },
+                'Emotional Stability':{
+                        'base':5,
+                        'modifier':0,
+                    },
+            },   
+        }    
+    },
+
+    'Empathy':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Charm':{
+                'base':5,
+                'modifier':0,
+                },
+            'Intimidation':{
+                'base':5,
+                'modifier':0,
+                },
+            'Seduce':{
+                'base':5,
+                'modifier':0,
+                },
+            'Deceive':{
+                'base':5,
+                'modifier':0,
+                },
+            'Barter':{
+                'base':5,
+                'modifier':0,
+                },
+        }
+    },  
+}
+
+####
+
+PERSONALITY = {
+    'Openness':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Imagination':{
+                'base':5,
+                'modifier':0,
+            },
+            'Artistic Interests':{
+                'base':5,
+                'modifier':0,
+            },
+            'Emotionality':{
+                'base':5,
+                'modifier':0,
+            },
+            'Adventurousness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Intellect':{
+                'base':5,
+                'modifier':0,
+            },
+            'Liberalism':{
+                'base':5,
+                'modifier':0,
+            },
+        },
+    },  
+    'Conscientiousness':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Self-Efficacy':{
+                'base':5,
+                'modifier':0,
+            },
+            'Orderliness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Dutifulness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Achievement-Striving':{
+                'base':5,
+                'modifier':0,
+            },
+            'Self-Discipline':{
+                'base':5,
+                'modifier':0,
+            },
+            'Cautiousness':{
+                'base':5,
+                'modifier':0,
+            },
+        },
+    },  
+    'Extraversion':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Friendliness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Gregariousness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Assertiveness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Activity Level':{
+                'base':5,
+                'modifier':0,
+            },
+            'Excitement Seeking':{
+                'base':5,
+                'modifier':0,
+            },
+            'Cheerfulness':{
+                'base':5,
+                'modifier':0,
+            },
+        },
+    },  
+    'Agreeableness':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Trust':{
+                'base':5,
+                'modifier':0,
+            },
+            'Morality':{
+                'base':5,
+                'modifier':0,
+            },
+            'Altruism':{
+                'base':5,
+                'modifier':0,
+            },
+            'Cooperation':{
+                'base':5,
+                'modifier':0,
+            },
+            'Modesty':{
+                'base':5,
+                'modifier':0,
+            },
+            'Sympathy':{
+                'base':5,
+                'modifier':0,
+            },
+        },
+    },  
+    'Neuroticism':{
+        'base':5,
+        'modifier':0,
+        'substats':{
+            'Anxiety':{
+                'base':5,
+                'modifier':0,
+            },
+            'Anger':{
+                'base':5,
+                'modifier':0,
+            },
+            'Depression':{
+                'base':5,
+                'modifier':0,
+            },
+            'Self-Consciousness':{
+                'base':5,
+                'modifier':0,
+            },
+            'Immoderation':{
+                'base':5,
+                'modifier':0,
+            },
+            'Vulnerability':{
+                'base':5,
+                'modifier':0,
+            },
+        },
+    },  
+}
+
+#####
+
+MOOD = {
+    'base': 3,
+    'modifier':0,
+    'substats':[
+        'Euphoric',
+        'Happy',
+        'Content',
+        'Neutral',
+        'Discontent',
+        'Sad',
+        'Depressed',
+    ]
+}

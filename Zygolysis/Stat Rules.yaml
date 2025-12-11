@@ -1,0 +1,920 @@
+Stat Rules:
+  BASED ON SCALED SCORE IN PSYCHOMETRIC CONVERSION
+###
+'strength':
+
+  'brawn': 
+    - Raw Might:
+      0:
+        1:
+          2:
+            3:
+              4:
+                5:
+                  6:
+                    7:
+                      8:
+                        9:
+                          10: MELEE DAMAGE MODIFIER
+                        11:
+                      12:
+                    13:
+                  14:
+                15:
+              16:
+            17:
+          18:
+        19:
+      20:
+    - Skeletal Muscle Mass:
+      0: -7 INTIMIDATION, -7 SEDUCTION
+        1: -6 INTIMIDATION, -6 SEDUCTION
+          2: -5 INTIMIDATION, -5 SEDUCTION
+            3: -4 INTIMIDATION, -4 SEDUCTION
+              4: -3 INTIMIDATION, -3 SEDUCTION
+                5: -2 INTIMIDATION, -2 SEDUCTION
+                  6: -1 INTIMIDATION, -1 SEDUCTION
+                    7: +0 INTIMIDATION, +0 SEDUCTION
+                      8: +0 INTIMIDATION, +0 SEDUCTION
+                        9: +0 INTIMIDATION, +0 SEDUCTION
+                          10: Macronutrient Needs (refer to Stat Calc), +0 INTIMIDATION, +0 SEDUCTION
+                        11: +1 INTIMIDATION, +2 SEDUCTION
+                      12: +3 INTIMIDATION, +4 SEDUCTION
+                    13: +4 INTIMIDATION, +6 SEDUCTION
+                  14: +5 INTIMIDATION, -1 SEDUCTION
+                15: +5 INTIMIDATION,-2 SEDUCTION
+              16: +5 INTIMIDATION,-3 SEDUCTION
+            17: +6 INTIMIDATION,-4 SEDUCTION
+          18: +6 INTIMIDATION,-5 SEDUCTION
+        19: +6 INTIMIDATION,-6 SEDUCTION
+      20: +7 INTIMIDATION,-7 SEDUCTION
+    - Explosiveness:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Rate of Force Development (RFD) - Sprinting, Jumping
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Lifting Capacity: # RELABLE "CARRYING CAPACITY"
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Carry Weight
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'stamina':
+    - Muscular Endurance:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Duration of strength skills utilization before debuffs begin in combat
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Grip Strength:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Maximum weight of weapon, tool, or object that can be wielded
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Gross Motor Control:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Athleticism - ability to use large muscle groups in coordinated, efficient, and safe ways under resistance (push,pull,legs,core)
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+###
+'agility':
+    
+  'dodge':
+    - Reflexes:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Ability to respond to sudden environmental shifts
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Hit Avoidance:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Ability to dodge incoming attacks
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Stealth:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: Ability to remain undetected
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'mobility':
+    - Balance:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to maintain balance during actions
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Speed:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: speed of all non-dash movement
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Flexibility:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to resist debuffs from not resting and extended exertion
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Acrobatics:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to control body for precision movements
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'precision':
+    - Fine Motor Control:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to do tasks that require detailed movements
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Aim:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to successfully aim and strike targets
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+###
+'vitality':
+
+  'resilience':
+    - Pain Tolerance:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to resist debuffs from injured limbs
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Durability:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: limb hp before they become in operable or destroyed
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Absorbtion:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: acute damage absorbtion 
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'vigor':
+    - Recovery Rate:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: rate of healing when resting
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Homeostatic Efficiency:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: effectiveness of medical and survival interventions
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Resistance:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: chronic damage absorbtion (like poison or burning)
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+###
+'intelligence':
+
+  'memory':
+    - Information Retention:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to remember relevant information
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'logic':
+    - Pattern Recognition:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to identify patterns and trends
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Spatial Reasoning:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to figure out how things go together and construct large things
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Strategic Prowess:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to come up with long term plans for self and others
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'fluency':
+    - Processing Speed:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to think quickly (lengthens situational time constraints)
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+###
+'sagacity':
+
+  'perception':
+    - Environmental Awareness:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to detect what is happening around them
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Sensory Sensitivity:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to detect small stimuli
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20:  
+  'intuition':
+    - Instincts:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to detemrine if someone is telling the turth
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Interpersonal Insight:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: abiltiy to know somone else's emotional state and other stats
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+      - Intrapersonal Insight:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: abiltiy to know somone else's emotional state and other stats
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'composure':
+    - Stress Modulation:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: efficacy at stress reduction
+                        11: 
+                      12: 
+                    13: -
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+    - Emotional Stability:
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to handle neuroticism
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+###
+'empathy':
+
+  'charm':
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to charm others
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'intimidation':
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to intimidate others
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'seduction':
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to seduce others
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+  'deception':
+      0: 
+        1: 
+          2: 
+            3: 
+              4: 
+                5: 
+                  6: 
+                    7: 
+                      8: 
+                        9: 
+                          10: ability to deceive others
+                        11: 
+                      12: 
+                    13: 
+                  14: 
+                15: 
+              16: 
+            17: 
+          18: 
+        19: 
+      20: 
+
+#####
+
+Personality Traits:
+
+#####
+
+'openness':
+
+  - 'imagination':
+  - 'aesthetics':
+  - 'emotionality':
+  - 'adventurousness':
+  - 'curiosity':
+  - 'progressivism':
+###
+conscientiousness':
+
+  - 'self_efficacy':
+  - 'orderliness':
+  - 'dutifulness':
+  - 'achievement_striving':
+  - 'self_discipline':
+  - 'cautiousness':
+###    
+'extraversion':
+
+  - 'warmth':
+  - 'gregariousness':
+  - 'assertiveness':
+  - 'liveliness':
+  - 'excitement_seeking':
+  - 'cheerfulness':
+###
+'agreeableness':
+
+  - 'trust':
+  - 'morality':
+  - 'altruism':
+  - 'cooperation':
+  - 'modesty':
+  - 'sympathy':
+###
+'neuroticism':
+
+- 'anxiety':
+- 'anger':
+- 'depression':
+- 'self_consciousness':
+- 'impulsiveness':
+- 'fear':
