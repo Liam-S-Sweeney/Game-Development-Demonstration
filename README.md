@@ -14,7 +14,7 @@ Combat is handled through a **derived-stat rules engine**, including **body-part
 - **SQLite-backed data models** for scalable, structured, locacl and global entity storage  
 - **Tkinter/ttk GUI editors** for characters and items with dynamic, type-dependent validation  
 - **Data-driven stat framework:** core attributes → substats → derived combat + gameplay metrics  
-- **Body-part combat model** enabling targeted damage, equipment interaction, and multivariable interactions over with a near unlimited number of characters an entities  
+- **Body-part combat model** enabling targeted damage, equipment interaction, and multivariable interactions within and between objects
 - **Modular backend design** engineered for front-end integration via sockets  
 - **Clear separation of concerns** between content creation, persistence, and runtime execution  
 
