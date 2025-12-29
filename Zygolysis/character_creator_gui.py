@@ -88,8 +88,6 @@ class CharacterCreatorGUI:
         global entry_var
         entry_var = tk.StringVar()
 
-        # self.main_stat_widgets = [[f'{field}_entry'] for field in main_demographics]
-
         self.entries = {}
         self.widgets = []
 
@@ -97,8 +95,8 @@ class CharacterCreatorGUI:
 
     def main_page(self):
         entry_var = tk.StringVar()
-
         entry_var.trace_add('write', lambda *args: entry_var.set(entry_var.get().lower()))
+        
         # Layout
         for i, field in enumerate(main_demographics):
             label = tk.Label(root, text=field.capitalize())
@@ -218,13 +216,11 @@ class CharacterCreatorGUI:
                 self.entries['randomize_stats'] = randomize_var
                 self.widgets.append(randomize_stats_entry)
 
-        
-
-
         submit_main_btn = tk.Button(root, text="Save Stats | Next Page", command=self.save_character_stats)
         submit_main_btn.grid(row=len(main_demographics)+2, column=0, columnspan=4, pady=10)
         self.widgets.append(submit_main_btn)  
 
+    
     def wield_page(self):
         entry_var = tk.StringVar()
         entry_var.trace_add('write', self.to_lower)
@@ -239,38 +235,13 @@ class CharacterCreatorGUI:
         for position_index, item_level in enumerate(ITEM_DATA['level']):
             if item_level <= active_character['level'] and str(ITEM_DATA['wield'][position_index]) == '1':
                 on_level_wield.append((ITEM_DATA['name'][position_index], ITEM_DATA['one_or_two_handed'][position_index]))
-
-        # self.item_controls = []
-        # self.max_hands = 4
-        # self.hands_used_var = tk.IntVar(value=0)
-
-        # for i, item in enumerate(on_level_wield):
-        #     name, hands = item
-        #     frame = tk.Frame(self.root)
-        #     frame.grid(row=i+1, column=0, columnspan=2, sticky='w')
-
-
-        #     label = tk.Label(frame, text=f"{name} | ({hands} handed)")
-        #     label.pack(side='left')
-
-        #     qty_var = tk.IntVar(value=0)
-        #     spinbox = tk.Spinbox(
-        #         frame, from_=0, to=4, textvariable=qty_var, width=2,
-        #         command=lambda idx=i: self.update_hand_count(idx)
-        #     )
-        #     spinbox.pack(side='left')
-        #     self.widgets.extend([frame, label, spinbox])
-
-        #     self.item_controls.append((name, int(hands), qty_var))
-
+                
         self.wielded_items = {}
         for i in range(4):
             label = tk.Label(root, text=f'Hand Slot {i + 1}')
             label.grid(row=i+1, column=0, sticky="e", padx=5, pady=5)
             self.widgets.append(label)
 
-            # print(label.cget("text"))
-            # item_values = [[f'{item} | {hand} handed'] for item,hand in on_level_wield]
             item_values = []
             for item,hand in on_level_wield:
                 item_values.append(f'{item} | {hand} handed')
@@ -293,9 +264,6 @@ class CharacterCreatorGUI:
                 hand_slot_entry.grid(row=i+1, column=1, sticky="e", padx=5, pady=5)
                 self.wielded_items[f'hand_slot_{i + 1}'] = hand_slot_entry
                 self.widgets.append(hand_slot_entry)
-            # hand_slot_entry.bind("<<ComboboxSelected>>", self.update_hands)
-
-
                 
         submit_wield_page = tk.Button(root, text="Save Wieldables | Next Page", command=self.save_wieldables)
         submit_wield_page.grid(row=6, column=0, columnspan=4, pady=10)
@@ -338,8 +306,6 @@ class CharacterCreatorGUI:
             submit_wield_page.grid(row=len(self.on_level_equip)+2, column=0, columnspan=4, pady=10)
             self.widgets.append(submit_wield_page)  
 
-
-
 ####################
 
     def update_subtypes(self, event):
@@ -352,7 +318,6 @@ class CharacterCreatorGUI:
     def update_hands(self, event):
         for hand_slot,value in self.wielded_items.items():
             value = value.get()
-            # print(value)
             if hand_slot == "hand_slot_1":
                 if "1 handed" in value:
                     subtype_box_2 = self.wielded_items['hand_slot_2']
@@ -363,7 +328,6 @@ class CharacterCreatorGUI:
                             one_hand_options.append(f'{item} | {hand} handed')
 
                     subtype_box_2.config(values=one_hand_options, state="readonly")
-                    # subtype_box_2.set('')
                 elif "1 handed" not in value:
                     subtype_box_2 = self.wielded_items['hand_slot_2']
                     subtype_box_2.config(state="disabled")
@@ -382,25 +346,7 @@ class CharacterCreatorGUI:
                 elif "1 handed" not in value:
                     subtype_box_4 = self.wielded_items['hand_slot_4']
                     subtype_box_4.config(state="disabled")
-                    # subtype_box_4.set('')
-            
-
-    # def update_hand_count(self, changed_idx):
-    #     total_hands = 0
-    #     for name, hands, var in self.item_controls:
-    #         qty = var.get()
-    #         total_hands += hands * int(qty)
-
-    #     self.hands_used_var.set(total_hands)
-
-    #     if total_hands > self.max_hands:
-    #         # Subtract 1 from the changed spinbox
-    #         name, hands, var = self.item_controls[changed_idx]
-    #         current_val = int(var.get())
-    #         if current_val > 0:
-    #             var.set(current_val - 1 )
-    #         messagebox.showwarning("Too many hands", "You're trying to use more than 4 hands!")
-
+                    
 
     def update_equipped(self, idx):
         var, name, equip_type = self.equipment_vars[idx]
@@ -415,7 +361,6 @@ class CharacterCreatorGUI:
 
         else:  # Unchecking
             self.equipped_gear = [(n, t) for n, t in self.equipped_gear if n != name]
-        # print(self.equipped_gear)
 
 
 
@@ -537,8 +482,6 @@ class CharacterCreatorGUI:
         wieldable_inventory = {}
         for hand,item in self.wielded_items.items():
             wieldable_inventory[hand] = item.get()
-        # print(self.wielded_items)
-        # print(wieldable_inventory)
         try:
             global character_name
             character_name = active_character['name'] 
@@ -559,20 +502,11 @@ class CharacterCreatorGUI:
         self.equipment_page()
 
     def save_equipped(self):
-        # wieldable_inventory = []
-        # for item in self.equipped_gear:
-        #     name, equip_type = item
-        #     count = count.get()
-        #     if count != 0:
-        #         wieldable_inventory.append((name,count))
-        
         try:
             for item in self.equipped_gear:
                 # global character_name
                 name,equip_type = item
-                # print(f"Updating {equip_type} for character: {character_name} | {item} | {name}")
                 equip_json = json.dumps(item)
-                # print(equip_json)
                 character_name = active_character['name'] 
                 sql = f'UPDATE characters SET {equip_type} = ? WHERE name = ?'
                 cursor.execute(sql, (equip_json, character_name))
@@ -582,12 +516,11 @@ class CharacterCreatorGUI:
             messagebox.showerror("Database Error", str(e))
 
         self.clear_widgets()
-
-        self.clear_widgets()
         self.main_page()
 
 # Launch the GUI
 root = tk.Tk()
 app = CharacterCreatorGUI(root)
 root.mainloop()
+
 
