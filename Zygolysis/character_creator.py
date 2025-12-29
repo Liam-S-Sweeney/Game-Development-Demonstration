@@ -29,10 +29,7 @@ def load_character_data():
 
 load_character_data()
 
-# print(CHARACTER_DATA.items())
-
 class Character():
-# print(CHARACTER_DATA)
     def __init__(self,name):
         def db_to_cs(name):
             for position_index,n in enumerate(CHARACTER_DATA['name']):
@@ -100,12 +97,12 @@ class Character():
                     'seduction': ['seduction'],
                     'deception': ['deception'],},}
                                                                     
-
             personality = ['openness',
             'conscientiousness',
             'extraversion',
             'agreeableness',
             'neuroticism',]
+            
             global character_db_stats
             try:
                 if CHARACTER_DATA['randomize_stats'][index_db] == '1':
@@ -119,12 +116,9 @@ class Character():
 
                     for field,subfield in all_fields.items():
                         for subfield_name,trait in subfield.items():
-                            # print(f"{field} -> {subfield_name}")
-                            # print(f"field = {field} | subfield_name = {subfield_name}")
                             vary_or_same = random.randint(0,4)
 
                             base = int(CHARACTER_DATA[subfield_name][index_db])
-                            # print(f"Base = {base}")
 
                             rand_stat_modifier = 0
 
@@ -146,7 +140,6 @@ class Character():
                                 rand_stat_modifier = 0
 
                             modified_stat = (base + rand_stat_modifier)
-                            # print(modified_stat)
                             for trait in subfield[subfield_name]:
                                 CHARACTER_DATA[trait][index_db] = str(modified_stat)
 
@@ -178,7 +171,6 @@ class Character():
                                     sagacity_subscale_vals.append(modified_stat)
                                 elif field == 'influence':
                                     influence_subscale_vals.append(modified_stat)
-                            # print(agility_subscale_vals) 
                 for field in all_fields.keys():
                     if field == 'strength':
                         avg = round(stat.mean(strength_subscale_vals))
@@ -221,10 +213,6 @@ class Character():
                 character_db_stats = {}
                 for field,val in CHARACTER_DATA.items():
                     character_db_stats[field] = val[index_db]
-            
-            # print(character_db_stats)
-
-    # db_to_cs('Dummy')
 
         db_to_cs(name)
         global character_in_game_stats
@@ -494,18 +482,3 @@ class Character():
                     character_in_game_stats[field] = substats
         for key,value in character_in_game_stats.items():
             setattr(self,key, value)
-            # print(f'{key} --> {value}\n')
-        
-
-# print(vars(Character('god')))
-# print(Character('random_test'))
-# print(vars(Character('test')))
-
-
-# character = 'test'
-# x = Character('test').__getattribute__('durability')[f"{Character('test').__getattribute__('sex')}_cranium"]  
-# print(x)
-# print(Character('test').__getattribute__('sex'))
-# TAKE THE DB VAL THEN WHEN YOU MAKE A CHARACTER, 
-# TAKES THESE DB VAL AND APPLY TO ATTRIBUTE FILTER FROM SC TO OBJECT
-
