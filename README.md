@@ -56,4 +56,4 @@ This project demonstrates practical engineering skills relevant to research, sof
 
 - Socket-based communication layer for Unity/C# 
 - 3D skeleton frame integration for physical combat visualization  
-- Additional item and ability
+- Additional characters, items, abilities, and mechanics planned
