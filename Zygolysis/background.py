@@ -81,15 +81,13 @@ MORTALS_DICTIONARY = {
 
 #########################################################################################
 
-
-# Here's the full translation of all Ancient Greek words in your code snippet:
-# 🔱 FACTIONS
+# FACTIONS
 
 #     listís → Bandit / Robber
 
 #     emporosos (likely a typo of "emporos") → Merchants / Traders
 
-# 🧙 GODS
+# GODS
 
 #     Kyríarchos (Κυρίαρχος) → Ruler / Lord
 
@@ -101,7 +99,7 @@ MORTALS_DICTIONARY = {
 
 #     Theatrónis (Θεατρώνης, likely neologism) → Theatric One / Stage God (rooted in "θέατρον" = theater)
 
-#     Libertine → Latin-based, not Greek (means one who is morally or sexually unrestrained)
+#     Libertine → Latin-based, not Greek (means one who is unrestrained)
 
 #     Godless → English term
 
