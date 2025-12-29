@@ -1,26 +1,26 @@
-# Zygolysis — Python RPG Simulation Engine
+# Zygolysis — Python-based RPG Simulation Engine
 
-**Zygolysis** is a modular, data-driven RPG/CYOA engine built in Python, designed as a backend simulation framework for complex character, item, and combat systems.
+**Zygolysis** is a modular, data-driven RPG engine built in Python, designed as a backend simulation framework for dynamic character, item, and combat systems.
 
-The engine uses a **SQLite relational database** for structured entity storage, **Tkinter/ttk GUI tools** for dynamic content creation, and extensive **OOP architecture** for clean, extensible game logic. Characters, items, and stats are defined through authoring tools that expand high-level inputs into detailed stat structures and serialize them directly to the database.
+The engine uses a **SQLite relational database** for structured entity storage, **Tkinter/ttk GUI tools** for dynamic content creation, and extensive **OOP architecture** for clean, extensible game logic. Characters, items, and stats are defined through logic pipelines that expand basic developer inputs into detailed stat structures and then serializes them directly to the database for the game engine to utilize.
 
-Combat is handled through a **derived-stat rules engine**, including **body-part-level HP pools**, standardized stat calculations, and equipment-based modifiers. The system is architected to integrate with a **Unity/C# front-end via sockets**, enabling real-time communication between Python logic and external 3D interfaces.
+Combat is handled through a **derived-stat rules engine**, including **body-part-level HP pools**, standardized stat calculations, and equipment-based modifiers. The system is architected to integrate with a **Unity/C# front-end via sockets** in the future enabling real-time communication between Python logic and external 3D interfaces.
 
 ---
 
-## 🚀 Technical Highlights
+## Technical Highlights
 
 - **Python OOP architecture** for characters, items, combat rules, and simulation flow  
-- **SQLite-backed data models** for scalable, structured, locacl and global entity storage  
-- **Tkinter/ttk GUI editors** for characters and items with dynamic, type-dependent validation  
-- **Data-driven stat framework:** core attributes → substats → derived combat + gameplay metrics  
-- **Body-part combat model** enabling targeted damage, equipment interaction, and multivariable interactions within and between objects
-- **Modular backend design** engineered for front-end integration via sockets  
+- **SQLite-backed data models** for scalable, structured, local and global entity storage  
+- **Tkinter/ttk GUI editors** for characters and items with dynamic, type-dependent validation and database updates
+- **Data-driven stat framework:** core attributes → substats → derived combat + gameplay functionality  
+- **Body-part combat model** enabling targeted damage, equipment interaction, and multivariate interactions within and between objects
+- **Modular backend design** engineered for front-end integration via sockets in the future
 - **Clear separation of concerns** between content creation, persistence, and runtime execution  
 
 ---
 
-## 🎯 Professional Applicability
+## Professional Applicability
 
 This project demonstrates practical engineering skills relevant to research, software development, and computational modeling:
 
@@ -33,7 +33,7 @@ This project demonstrates practical engineering skills relevant to research, sof
 
 ---
 
-## 🧩 Features
+## Features
 
 - Character creator GUI with:
   - Attribute inputs  
@@ -52,8 +52,8 @@ This project demonstrates practical engineering skills relevant to research, sof
 
 ---
 
-## 🔧 Planned Extensions
+## Planned Extensions
 
-- Socket-based communication layer for Unity/C#  
+- Socket-based communication layer for Unity/C# 
 - 3D skeleton frame integration for physical combat visualization  
 - Additional item and ability
