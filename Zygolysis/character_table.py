@@ -243,8 +243,6 @@ def new_character(name, sex, faction, gods, mortal_type, mortal_subtype, level,
                 randomize_stats):
 
     existing_pairs = list(zip(CHARACTER_DATA['name'], CHARACTER_DATA['faction']))
-    # print("DEBUG: existing_pairs =", existing_pairs)
-    # print(f"DEBUG: comparing to → {(name, faction)}")
 
     if (name.strip(), faction.strip()) not in [(n.strip(), f.strip()) for n, f in existing_pairs]:
         CHARACTER_DATA['name'].append(name)
@@ -362,7 +360,6 @@ def new_character(name, sex, faction, gods, mortal_type, mortal_subtype, level,
         CHARACTER_DATA['hand_slot_2'].append(hand_slot_2)
         CHARACTER_DATA['hand_slot_3'].append(hand_slot_3)
         CHARACTER_DATA['hand_slot_4'].append(hand_slot_4)
-# hand_slot_1,hand_slot_2,hand_slot_3,hand_slot_4,
         CHARACTER_DATA['hat'].append(hat)
         CHARACTER_DATA['upper_face'].append(upper_face)
         CHARACTER_DATA['lower_face'].append(lower_face)
@@ -405,8 +402,6 @@ def delete_character(name,faction):
     CHARACTERS_CONN.commit()
     print(f"Deleted character: {name} from {faction}")
 
-# delete_character('Dummy','Dummy')
-# delete_character('Test','Test')
 
 def edit_character(name:str, faction:str, updates:dict):
         set_clause = ", ".join([f"{key} = ?" for key in updates.keys()])
@@ -503,4 +498,5 @@ new_character(name='dummy', sex='dummy', faction='dummy', gods='dummy', mortal_t
 )
 
 df = pd.read_sql("SELECT * FROM characters", CHARACTERS_CONN)
+
 print(df)
