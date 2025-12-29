@@ -87,10 +87,6 @@ armor_equip_type_list = ['helmet','face','gorget','coif','arming_cap', # gorget 
 accessories_equip_type_list = ['hat','upper_face','lower_face','scarf','jacket','shirt','bottoms','belt','socks','undergarment','shoes',
                         'ring','necklace','bracelet','eye_piece','mask','implant','gadget']
 
-# ITEM_DB_PATH = r'C:\Users\15086\Desktop\Zygolysis\items.db'
-# item_conn = connect(ITEM_DB_PATH)
-# item_cursor = item_conn.cursor()
-
 def load_character_data():
     global ITEM_DATA
     global ITEM_CONN
@@ -116,11 +112,6 @@ def load_character_data():
     return ITEM_CONN, ITEM_CURSOR
 
 load_character_data()
-
-# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# ITEMS_DB_PATH = os.path.join(BASE_DIR,'items.db')
-# ITEM_CONN = connect(ITEMS_DB_PATH)
-# ITEM_CURSOR = ITEM_CONN.cursor()
 
 def save_item_to_db():
     df = pd.DataFrame({key: [ITEM_DATA[key][-1]] for key in ITEM_DATA})
@@ -452,7 +443,6 @@ class ItemCreatorGUI:
     def expand_stats(self, event=None):
         def delete_extra_rows():
             children = self.scrollable_frame.winfo_children()
-            # max_row = max(int(widget.grid_info().get('row', -1)) for widget in children)
 
             for widget in children:
                 info = widget.grid_info()
@@ -646,6 +636,7 @@ root = tk.Tk()
 app = ItemCreatorGUI(root)
 root.mainloop()
                 
+
 
 
 
