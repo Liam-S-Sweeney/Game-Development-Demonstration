@@ -956,8 +956,3 @@ class Influence:
     intimidation_data = ds_main_categories(intimidation)
 
 #############################################################################
-
-# print(Brawn().carrying_capacity_df['male'][10])
-# print(Mobility().balance_df['male_reactive'])
-# print(Precision().targeting_df)
-# print(Brawn().block_chance_df)
