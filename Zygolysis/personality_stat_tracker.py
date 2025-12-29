@@ -56,13 +56,3 @@ def personality_update(trait_letter,selected,possible):
         personality_trait_working_values[trait_letter] = updated_tuple
     except:
         print(f'Verify that {selected} and {possible} are intergers')
-
-        
-
-# base_personality_setup()
-# personality_update('o',100,100)
-
-# print(personality_trait_working_values)
-
-# personality_update('o',-69,-69)
-# print(personality_trait_working_values)
