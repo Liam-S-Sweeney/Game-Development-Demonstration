@@ -165,6 +165,3 @@ def delete_character(name,faction):
                    (name, faction))
     PC_CONN.commit()
     print(f"Deleted character: {name} from {faction}")
-
-# print(CHARACTER_DATA)
-# delete_character('test','ascendency')
